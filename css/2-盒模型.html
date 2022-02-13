@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        margin: 10px;
+        /* 固定宽度为200px 而不是222px */
+        box-sizing: border-box;
+        /* 同不加box-sizing 宽度仍然是222px */
+        /* box-sizing: content-box; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">Hello from box</div>
+  </body>
+</html>

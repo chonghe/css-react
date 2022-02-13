@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 300px;
+        /* height: 100px; */
+        padding: 20px 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+      }
+      .item {
+        background-color: orange;
+      }
+      .box-1 {
+        text-align: center;
+      }
+      .box-2 .item {
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .box-3 {
+        position: relative;
+        height: 100px;
+      }
+      .box-3 .item {
+        position: absolute;
+        width: 150px;
+        height: 100px;
+        left: 50%;
+        margin-left: -75px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      行内 inline 元素   text-align：center 
+      块级 block 元素   margin：0 auto
+      absolute 定位元素   left：50%
+                          margin-left 负值
+    -->
+    <div class="box box-1">
+      <span>Content</span>
+    </div>
+
+    <div class="box box-2">
+      <div class="item">Item</div>
+    </div>
+
+    <div class="box box-3">
+      <div class="item">Item</div>
+    </div>
+  </body>
+</html>

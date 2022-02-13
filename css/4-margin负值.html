@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .container {
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .box-top,
+      .box-left {
+        border: 1px solid orange;
+      }
+      .box-bottom,
+      .box-right {
+        border: 1px solid green;
+      }
+      .box-left,
+      .box-right {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- margin-top 负值 元素向上拖拽 -->
+    <!-- margin-left 负值 元素向左拖拽 -->
+    <!-- margin-right 负值 元素本身不变 右边元素左移 -->
+    <!-- margin-bottom 负值 元素本身不变 下边元素上移 -->
+    <div>
+      <hq>margin负值 上下排列的情况</hq>
+      <div class="container">
+        <div class="box box-top"></div>
+        <div class="box box-bottom"></div>
+      </div>
+      <hq>margin负值 左右排列的情况</hq>
+      <div class="container clearfix">
+        <div class="box box-left"></div>
+        <div class="box box-right"></div>
+      </div>
+    </div>
+  </body>
+</html>
